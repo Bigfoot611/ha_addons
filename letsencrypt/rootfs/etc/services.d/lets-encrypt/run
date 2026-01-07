@@ -297,6 +297,13 @@ if [ "${CHALLENGE}" == "dns" ]; then
             ACME_ARGUMENTS+=("--authenticator" "${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey" "--${DNS_PROVIDER}-propagation-seconds" "${PROPAGATION_SECONDS}")
             ;;
 
+        # Servercow
+        'dns-servercow')
+            bashio::config.require 'dns.servercow_username'
+            bashio::config.require 'dns.servercow_password'
+            ACME_ARGUMENTS+=("--authenticator" "${DNS_PROVIDER}" "--${DNS_PROVIDER}-credentials" "/data/dnsapikey" "--${DNS_PROVIDER}-propagation-seconds" "${PROPAGATION_SECONDS}")
+            ;;
+        
         # TransIP
         'dns-transip')
             bashio::config.require 'dns.transip_username'
