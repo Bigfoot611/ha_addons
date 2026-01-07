@@ -81,6 +81,7 @@ dns-porkbun
 dns-rfc2136
 dns-route53
 dns-sakuracloud
+dns-servercow
 dns-simply
 dns-transip
 dns-websupport
@@ -174,6 +175,8 @@ rfc2136_server: ''
 rfc2136_sign_query: false
 sakuracloud_api_secret: ''
 sakuracloud_api_token: ''
+servercow_api_username: ''
+servercow_api_password: ''
 simply_account_name: ''
 simply_api_key: ''
 transip_api_key: ''

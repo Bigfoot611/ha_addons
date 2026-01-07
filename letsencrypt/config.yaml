@@ -150,6 +150,7 @@ schema:
         dns-rfc2136|\
         dns-route53|\
         dns-sakuracloud|\
+        dns-servercow|\
         dns-simply|\
         dns-transip|\
         dns-websupport)?"
@@ -161,6 +162,8 @@ schema:
     rfc2136_sign_query: bool?
     sakuracloud_api_secret: str?
     sakuracloud_api_token: str?
+    servercow_api_username: str?
+    servercow_api_password: str?
     simply_account_name: str?
     simply_api_key: str?
     transip_api_key: str?
